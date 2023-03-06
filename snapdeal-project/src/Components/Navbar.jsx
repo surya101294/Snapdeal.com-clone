@@ -161,8 +161,10 @@ export const Navbar = () => {
               <ul>
                 <li>
                   <i class="far fa-user"></i>
-                  <Link to="/account">Your Account</Link>
+                  <Link to="/account">
+                   <h3>Your Account </h3> </Link>
                 </li>
+                    {/* <button className="Navbtn" onClick={()=>navigate("/account")}> Your Account </button> <br /> */}
                 {/* <li>
                   <i class="fas fa-box-open"></i>
                   <Link to="/cart">Your Orders</Link>
@@ -174,13 +176,17 @@ export const Navbar = () => {
               <p>If you are a new user</p>
 
               <Link to={"/signup"}>
-                <h3 style={{ fontSize: "20px" }}>Register</h3>
+                <h3 >Register</h3>
               </Link>
 
               <Link to={"/login"}>
-                <h3 style={{ fontSize: "20px" }}>Login</h3>{" "}
+                <h3 >Login</h3>{" "}
               </Link>
+              {/*  <button onClick={()=>navigate("/signup")}> Register</button><br />
+              <button onClick={()=>navigate("/login")}> Login </button><br />*/}
+
               <button
+              className="Navbtn" 
                 onClick={() => {
                   logoutfunction();
                 }}
